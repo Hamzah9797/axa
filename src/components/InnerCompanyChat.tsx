@@ -178,6 +178,7 @@ const InnerCompanyChat = ({ onCloseBtnClick }: ChildProps) => {
           ) {
             editEmpFunc(chat?.uuid, mentionedEmp?.name);
           }
+
           if (
             mentionedEmp?.mentioned.includes(chat?.uuid!) &&
             chat?.EmployeeParticipantsId?.includes(mentionedEmp?.uuid!)
@@ -187,6 +188,7 @@ const InnerCompanyChat = ({ onCloseBtnClick }: ChildProps) => {
               mentionedEmp.uuid
             );
           }
+
           if (
             !mentionedEmp?.mentioned.includes(chat?.uuid!) &&
             chat?.EmployeeParticipantsId?.includes(mentionedEmp?.uuid!)
@@ -194,9 +196,10 @@ const InnerCompanyChat = ({ onCloseBtnClick }: ChildProps) => {
             removeFromParticipantsFunc(
               chat.ConversationUuid,
               mentionedEmp?.uuid
-            ),
-              editEmpFunc(chat?.uuid, mentionedEmp?.name);
+            );
+            editEmpFunc(chat?.uuid, mentionedEmp?.name);
           }
+
           if (
             mentionedEmp?.mentioned.includes(chat?.uuid!) &&
             !chat?.EmployeeParticipantsId?.includes(mentionedEmp?.uuid!)

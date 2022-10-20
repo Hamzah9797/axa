@@ -80,7 +80,16 @@ function App() {
       <SpecificCustomerIdContext.Provider
         value={{ specificCustomerId, setSpecificCustomerId }}
       >
-        <Router>
+        <Login />
+      </SpecificCustomerIdContext.Provider>
+    </SpecificConversationIdContext.Provider>
+  );
+}
+
+export default App;
+
+{
+  /* <Router>
           <Switch>
             <Route exact path="/">
               <Login />
@@ -96,10 +105,5 @@ function App() {
               <CustomerSearchPage />
             </Route>
           </Switch>
-        </Router>
-      </SpecificCustomerIdContext.Provider>
-    </SpecificConversationIdContext.Provider>
-  );
+        </Router> */
 }
-
-export default App;

@@ -43,9 +43,9 @@ const EmpNameSearchBox = ({
   onClickCloseBtn,
   onNameClick,
 }: ChildProps) => {
-  if (!open) return null;
-
   const { employee } = useTypedSelector((state) => state);
+
+  if (!open) return null;
 
   const empList = employeesData.filter(
     (emp) => emp.name !== employee.currentUser?.name
