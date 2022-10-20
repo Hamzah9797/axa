@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/axa/static/css/main.10920a55.css",
+    "main.js": "/axa/static/js/main.06c5ca1d.js",
+    "index.html": "/axa/index.html",
+    "main.10920a55.css.map": "/axa/static/css/main.10920a55.css.map",
+    "main.06c5ca1d.js.map": "/axa/static/js/main.06c5ca1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10920a55.css",
+    "static/js/main.06c5ca1d.js"
+  ]
+}
